@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:senior_project/StyleTXT.dart';
-import 'package:senior_project/screens/CustomerInfo.dart';
-import 'package:senior_project/shared/BackgroundImage.dart';
+import 'package:serial_code/StyleTXT.dart';
+import 'package:serial_code/screens/CustomerInfo.dart';
+import 'package:serial_code/shared/BackgroundImage.dart';
 class SearchCustomer extends StatefulWidget {
   final DocumentSnapshot user;
 

@@ -1,5 +1,5 @@
 
-import 'package:senior_project/Models/Person.dart';
+import 'package:serial_code/Models/Person.dart';
 
 class Customer extends Person {
 

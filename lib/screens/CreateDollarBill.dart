@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:senior_project/Models/DollarBill.dart';
-import 'package:senior_project/shared/BackgroundImage.dart';
+import 'package:serial_code/Models/DollarBill.dart';
+import 'package:serial_code/shared/BackgroundImage.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
@@ -784,9 +784,6 @@ class _CreateDollarBillState extends State<CreateDollarBill> {
   }
 
   bool isNumeric(String s) {
-    if (s == null) {
-      return false;
-    }
     return double.tryParse(s) != null;
   }
 }

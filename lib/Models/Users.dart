@@ -1,4 +1,4 @@
-import 'package:senior_project/Models/Person.dart';
+import 'package:serial_code/Models/Person.dart';
 
 class Users extends Person {
   final String username, password;

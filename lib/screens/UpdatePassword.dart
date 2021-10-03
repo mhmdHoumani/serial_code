@@ -3,10 +3,10 @@ import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:senior_project/StyleTXT.dart';
-import 'package:senior_project/shared/BackgroundImage.dart';
-import 'package:senior_project/screens/Home.dart';
-import 'package:senior_project/shared/TextFormFieldWidget.dart';
+import 'package:serial_code/StyleTXT.dart';
+import 'package:serial_code/shared/BackgroundImage.dart';
+import 'package:serial_code/screens/Home.dart';
+import 'package:serial_code/shared/TextFormFieldWidget.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 

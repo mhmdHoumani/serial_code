@@ -2,10 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:senior_project/StyleTXT.dart';
-import 'package:senior_project/screens/UpdateUser.dart';
-import 'package:senior_project/shared/BackgroundImage.dart';
-import 'package:senior_project/shared/TextFormFieldWidget.dart';
+import 'package:serial_code/StyleTXT.dart';
+import 'package:serial_code/screens/UpdateUser.dart';
+import 'package:serial_code/shared/BackgroundImage.dart';
+import 'package:serial_code/shared/TextFormFieldWidget.dart';
 
 class UserInfo extends StatefulWidget {
   final DocumentSnapshot userId;
