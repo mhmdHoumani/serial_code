@@ -136,7 +136,11 @@ class _UpdatePasswordState extends State<UpdatePassword> {
                               ),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12)),
-                              content: SingleChildScrollView(child: Text("Can't keep an empty field",textScaleFactor: 1.4,)),
+                              content: SingleChildScrollView(
+                                  child: Text(
+                                "Can't keep an empty field",
+                                textScaleFactor: 1.4,
+                              )),
                               actions: [
                                 FlatButton(
                                     onPressed: () {
@@ -162,7 +166,9 @@ class _UpdatePasswordState extends State<UpdatePassword> {
                                     borderRadius: BorderRadius.circular(12)),
                                 content: SingleChildScrollView(
                                   child: Text(
-                                      "Password and Confirm password do not match",textScaleFactor: 1.4,),
+                                    "Password and Confirm password do not match",
+                                    textScaleFactor: 1.4,
+                                  ),
                                 ),
                                 actions: [
                                   FlatButton(
@@ -180,12 +186,15 @@ class _UpdatePasswordState extends State<UpdatePassword> {
                           userRef.doc(widget.userId).update({
                             "Password": pass.text,
                             "isLoggedIn": true
-                          }).whenComplete(() => Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HomeScreen(
-                                        userId: widget.userId,
-                                      ))));
+                          }).whenComplete(() {
+                            Navigator.pop(context);
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen(
+                                          userId: widget.userId,
+                                        )));
+                          });
                         } else {
                           showTopSnackBar(
                             context,
@@ -201,12 +210,19 @@ class _UpdatePasswordState extends State<UpdatePassword> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Update', style: buttonStyleTXT,textScaleFactor: 2.5,),
+                      Text(
+                        'Update',
+                        style: buttonStyleTXT,
+                        textScaleFactor: 2.5,
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      Icon(Icons.app_registration_outlined,
-                          size: 25, color: Colors.white,)
+                      Icon(
+                        Icons.app_registration_outlined,
+                        size: 25,
+                        color: Colors.white,
+                      )
                     ],
                   ),
                 ),
