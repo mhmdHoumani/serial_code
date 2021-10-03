@@ -1,17 +1,13 @@
-import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:random_color/random_color.dart';
 import 'package:senior_project/screens/CreateNewCustomer.dart';
 import 'package:senior_project/screens/CustomerDetails.dart';
 import 'package:senior_project/screens/CustomerInfo.dart';
 import 'package:senior_project/screens/SearchCustomer.dart';
-import 'package:senior_project/screens/UpdateCustomer.dart';
-import 'package:senior_project/screens/UpdateUser.dart';
 import 'package:senior_project/screens/UserInfo.dart';
 import 'package:senior_project/shared/BackgroundImage.dart';
 import 'package:shared_preferences/shared_preferences.dart';

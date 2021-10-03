@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:random_color/random_color.dart';
 import 'package:senior_project/StyleTXT.dart';
 import 'package:senior_project/screens/CustomerInfo.dart';
 import 'package:senior_project/shared/BackgroundImage.dart';
@@ -103,10 +101,6 @@ class _SearchCustomerState extends State<SearchCustomer> {
                               .snapshots(),
                       builder:
                           (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-                        RandomColor _randomColor = RandomColor();
-                        ColorHue _green = ColorHue.custom(Range(80, 90));
-                        Color _color =
-                            _randomColor.randomColor(colorHue: _green);
                         if (snapshot.hasError) {
                           return Text("We got an error ${snapshot.error}");
                         }
@@ -165,7 +159,6 @@ class _SearchCustomerState extends State<SearchCustomer> {
                               );
                             }).toList());
                         }
-                        return Center(child: CircularProgressIndicator());
                       },
                     ),
                   )

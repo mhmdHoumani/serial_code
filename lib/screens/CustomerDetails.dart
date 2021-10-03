@@ -2,8 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:random_color/random_color.dart';
 import 'package:senior_project/StyleTXT.dart';
 import 'package:senior_project/screens/CreateDollarBill.dart';
 import 'package:senior_project/shared/BackgroundImage.dart';
